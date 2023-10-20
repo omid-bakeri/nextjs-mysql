@@ -23,8 +23,20 @@ function UsersTable() {
       email: "Mohammad@gmail.com",
     },
     {
-      name: "Robert",
-      email: "Robert@gmail.com",
+      name: "Ali",
+      email: "Ali@gmail.com",
+    },
+    {
+      name: "Mohammad",
+      email: "Mohammad@gmail.com",
+    },
+    {
+      name: "Nazanin",
+      email: "Nazanin@gmail.com",
+    },
+    {
+      name: "Bahar",
+      email: "B65@gmail.com",
     },
     {
       name: "Shadmehr",
@@ -67,11 +79,12 @@ function UsersTable() {
           >
             {data.map((item) => (
               <>
-                <button
+                <div
                   className="mt-1 flex 
                 justify-between w-full py-2 
-                items-center hover:duration-150
-                 hover:bg-slate-200 px-4"
+                items-center 
+                 hover:bg-slate-200 hover:duration-300
+                 hover:cursor-pointer px-4"
                 >
                   <div
                     className="flex justify-center 
@@ -81,7 +94,10 @@ function UsersTable() {
                     <div>{item.name.toUpperCase()}</div>
                   </div>
                   <div className="text-center">{item.email}</div>
-                  <div className="flex justify-center items-center gap-3">
+                  <div
+                    className="flex justify-center 
+                  items-center gap-3"
+                  >
                     <button>
                       <AiTwotoneDelete
                         className="text-xl
@@ -95,7 +111,7 @@ function UsersTable() {
                       />
                     </button>
                   </div>
-                </button>
+                </div>
               </>
             ))}
           </div>
