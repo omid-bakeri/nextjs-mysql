@@ -7,7 +7,7 @@ function Navbar() {
     <div
       className="w-[90%] mx-auto
    bg-cyan-800 flex justify-between
-   shadow-xl rounded-lg
+   shadow-xl rounded-t-lg
     items-center select-none gap-3 px-10 py-5 mt-10"
     >
       <div className="flex justify-start items-center gap-2">
